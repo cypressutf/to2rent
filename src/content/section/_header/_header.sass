@@ -1,0 +1,66 @@
+@use '../scss/vars' as *
+
+.header
+	background-image: url('../img/header-bg.jpg')
+	height: 100vh
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom center
+	&__top
+		display: flex
+		justify-content: space-between
+		// padding-top: 72px
+		padding-top: clamp(1.875rem, 0.92rem + 4.77vw, 4.5rem)
+		// font-size: 24px
+		font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem)
+		line-height: 28px
+		@include robotocondensed-regular
+	&__title
+		// padding-top: 152px
+		padding-top: clamp(0.625rem, -2.602rem + 16.14vw, 9.5rem)
+		text-align: center
+		@include balqis
+		// font-size: 250px
+		font-size: clamp(4.375rem, 0.284rem + 20.45vw, 15.625rem)
+		line-height: 334px
+		span
+			display: block
+			text-align: right
+			// font-size: 56px
+			font-size: clamp(1.25rem, 0.432rem + 4.09vw, 3.5rem)
+			line-height: 66px
+			@include robotocondensed-lightitalic
+			// margin-top: -66px
+			margin-top: clamp(-10.125rem, -12.307rem + 10.91vw, -4.125rem)
+			// margin-right: 83px
+			margin-right: clamp(0.313rem, -1.46rem + 8.86vw, 5.188rem)
+
+.menu
+	display: flex
+	justify-content: space-between
+	&__list
+		display: flex
+		// gap: 52px
+		gap: clamp(2.5rem, 2.227rem + 1.36vw, 3.25rem)
+	&__link
+		&:hover
+			text-decoration: underline
+
+.phone__link
+	position: relative
+	padding-left: 40px
+	&::before
+		content: ''
+		position: absolute
+		background-image: url('../img/header-phone.svg')
+		width: 30px
+		height: 30px
+		left: 0
+@media ( max-width: 600px )
+	.header
+		&__top
+			justify-content: center
+			flex-wrap: wrap
+	.menu
+		text-align: center
+		margin: 0 25px 25px 0
