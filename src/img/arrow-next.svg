@@ -1,0 +1,14 @@
+<svg width="70.000000" height="70.000000" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip13_4">
+			<rect id="стрелка слайдер вправо" width="70.000000" height="70.000000" transform="matrix(1 -1.73472e-18 -1.73472e-18 -1 0 70)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="стрелка слайдер вправо" width="70.000000" height="70.000000" transform="matrix(1 -1.73472e-18 -1.73472e-18 -1 0 70)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip13_4)">
+		<path id="стрелка слайдер" d="M35 68.9C53.73 68.9 68.9 53.73 68.9 35C68.9 16.26 53.73 1.09 35 1.09C16.26 1.09 1.09 16.26 1.09 35C1.09 53.73 16.26 68.9 35 68.9ZM19.14 28.98L35 28.98L35 19.29C35 17.82 36.77 17.08 37.8 18.12L53.42 33.83C54.07 34.48 54.07 35.5 53.42 36.14L37.8 51.87C36.76 52.91 35 52.17 35 50.7L35 41.01L19.14 41.01C18.23 41.01 17.5 40.27 17.5 39.37L17.5 30.62C17.5 29.72 18.23 28.98 19.14 28.98Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

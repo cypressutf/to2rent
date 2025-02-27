@@ -1,15 +1,24 @@
 header.header 
-	.container 
-		.header__top
-			nav.menu 
-				ul.menu__list 
-					li.menu__item 
-						a.menu__link(href="#trip") Маршрут
-					li.menu__item 
-						a.menu__link(href="#hotel") Отель
-					li.menu__item 
-						a.menu__link(href="#price") Стоимость
-			a.phone__link(href="tel:88005553535") 8 (800) 555-35-35
-		.header__inner 
-			h1.header__title Cappadocia
-				span Эксклюзивный тур
+	.header__logo 
+		a(href="#")
+			img(src="img/logo.png", alt="")
+	.header__inner
+		nav.menu
+			ul.menu__list
+				li.menu__list-item
+					a.menu__list-link(href="#") О нас
+				li.menu__list-item
+					a.menu__list-link(href="#") Дома
+				li.menu__list-item
+					a.menu__list-link(href="#") Квартиры
+				li.menu__list-item
+					a.menu__list-link(href="#") Контакты
+		.header__slider 
+			img(src="img/header-slider-1.jpg", alt="")
+			img(src="img/header-slider-2.jpg", alt="")
+			img(src="img/header-slider-3.jpg", alt="")
+		.header__search 
+			.header__search-form
+				label Поиск Аппартаментов
+				input(type="text" placeholder="Введите город")
+				button(type="submit") Найти

@@ -7,7 +7,7 @@
 		"build": "gulp --production",
 		"fonts": "gulp generateFontSass",
 		"sections": "node scripts/_generateSections.mjs",
-		"classes": "node scripts/_generateClasses.mjs",
+		"classes": "node scripts/_generateClasses.mjs && gulp",
 		"new": "npm run sections && npm run fonts"
 	},
 	"browserslist": [

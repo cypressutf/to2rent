@@ -1,13 +1,13 @@
-Fancybox.bind('[data-fancybox="gallery"]', {
-	loop: true,
-	buttons: ['zoom', 'close'],
-});
-console.log('Fancybox loaded via UMD');
+// Fancybox.bind('[data-fancybox="gallery"]', {
+// 	loop: true,
+// 	buttons: ['zoom', 'close'],
+// });
+// console.log('Fancybox loaded via UMD');
 
 $(function () {
-	$('.tail__slider, .trip__slider').slick({
-		prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-left.svg"></button>',
-		nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-right.svg"></button>',
+	$('.header__slider').slick({
+		prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-prev.svg"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-next.svg"></button>',
 		fade: true,
 		responsive: [
 			{

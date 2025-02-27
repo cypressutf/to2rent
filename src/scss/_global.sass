@@ -5,9 +5,8 @@ html, body
 	height: 100%
 body
 	font-size: 18px
-	line-height: 21px
-	@include robotocondensed-light
-	color: $text
+	line-height: 24px
+	@include robotocondensed-regular
 a
 	display: inline-block
 .wrapper
@@ -20,42 +19,6 @@ a
 	max-width: 1220px
 	padding: 0 10px
 	margin: 0 auto
-.title
-	// font-size: 96px
-	font-size: clamp(3.125rem, 2.08rem + 5.23vw, 6rem)
-	// line-height: 128px
-	line-height: clamp(5.625rem, 4.761rem + 4.32vw, 8rem)
-	color: $title
-	@include balqis
-	// margin-bottom: 100px
-	margin-bottom: clamp(1.25rem, -0.568rem + 9.09vw, 6.25rem)
-	span
-		// font-size: 24px
-		font-size: clamp(0.875rem, 0.648rem + 1.14vw, 1.5rem)
-		line-height: 28px
-		display: block
-		@include robotocondensed-lightitalic
-		color: $text
-		margin-top: -30px
-.subtitle
-	font-size: 24px
-	line-height: 28px
 picture
 	width: 100%
-.tail, .form, .hotel, .price, .trip
-	// margin: 200px auto
-	margin: clamp(2.5rem, -1.136rem + 18.18vw, 12.5rem) auto
-	max-width: 1920px
-.slick-prev, .slick-next
-	position: absolute
-	top: 50%
-	transform: translateY(-50%)
-	z-index: 5
-	background-color: transparent
-	border: none
-	cursor: pointer
-.slick-prev
-	left: 0
-.slick-next
-	right: 0
 @media ( max-width: 1050px )
