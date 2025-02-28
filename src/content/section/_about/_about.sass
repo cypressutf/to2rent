@@ -1,2 +1,76 @@
 @use 'vars' as *
 
+.about
+	margin-bottom: 110px
+	&__title
+		font-size: 48px
+		line-height: 64px
+		@include ptserif-regular
+		text-align: center
+		background-color: $black
+		color: $white
+		padding: 18px 10px
+		margin-bottom: 100px
+		gap: 25px
+	&__items
+		display: flex
+		justify-content: space-between
+		margin-bottom: 200px
+	&__item
+		// Стили для класса .about__item
+	&__item-img
+		margin-bottom: 30px
+	&__item-title
+		font-size: 24px
+		line-height: 24px
+		text-align: center
+		color: $grey
+		span
+			display: block
+			margin-bottom: 30px
+	&__item-link
+		margin: 0 auto
+		text-align: center
+		background-color: $grey
+		color: $white
+		padding: 13px 10px
+		max-width: 150px
+		cursor: pointer
+	&__content
+		display: flex
+		justify-content: space-between
+		gap: 113px
+	&__time
+		// Стили для класса .about__time
+	&__time-box, &__globus-box
+		display: flex
+		gap: 33px
+		align-items: center
+	&__time-title, &__globus-title
+		max-width: 335px
+		@include ptserif-regular
+		font-size: 36px
+		line-height: 36px
+	&__time-text, &__globus-text
+		margin-top: 20px
+		margin-bottom: 45px
+		max-width: 471px
+	&__time-link, &__globus-link
+		color: $grey
+		position: relative
+		a
+			text-decoration: underline
+			padding-left: 36px
+		&::before
+			content: ''
+			position: absolute
+			top: -3px
+			background-image: url(../img/arrow-black.svg)
+			background-repeat: no-repeat
+			width: 30px
+			height: 30px
+
+	&__globus
+		// Стили для класса .about__globus
+	&__globus-link
+		// Стили для класса .about__globus-link
