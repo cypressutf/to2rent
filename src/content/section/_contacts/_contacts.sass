@@ -1,2 +1,86 @@
 @use 'vars' as *
 
+.contacts
+	padding-top: 100px
+	background-color: $black
+	color: $white
+	&__inner
+		// Стили для класса .contacts__inner
+	&__content
+		display: flex
+		justify-content: space-between
+		gap: 100px
+		margin-bottom: 200px
+	&__manager
+		// Стили для класса .contacts__manager
+	&__manager-title, &__blog-title, &__reviews-title
+		@include ptserif-regular
+		font-size: 48px
+		line-height: 48px
+		text-align: center
+	&__manager-items
+		margin-top: 27px
+		display: flex
+		gap: 57px
+	&__manager-item
+		// Стили для класса .contacts__manager-item
+	&__manager-img
+		margin-bottom: 22px
+		img
+			border-radius: 50%
+	&__manager-name
+		@include robotocondensed-regular
+		font-size: 18px
+		line-height: 21px
+		margin-bottom: 43px
+		span
+			display: block
+	&__manager-link
+		@include robotocondensed-regular
+		font-size: 18px
+		line-height: 18px
+		background-color: $white
+		color: $black
+		padding: 16px 21px
+		cursor: pointer
+	&__blog
+		// Стили для класса .contacts__blog
+	&__blog-title
+		// Стили для класса .contacts__blog-title
+	&__blog-items
+		margin-top: 47px
+		width: 411px
+		@include robotocondensed-regular
+		font-size: 18px
+		line-height: 18px
+		text-align: left
+	&__blog-item
+		padding-left: 67px
+		margin-bottom: 28px
+		position: relative
+		&::before
+			content: ''
+			background-image: url('../img/arrow-white.svg')
+			width: 30px
+			height: 30px
+			position: absolute
+			top: -5px
+			left: 0
+	&__reviews
+		// Стили для класса .contacts__reviews
+	&__reviews-img
+		margin-top: 48px
+	&__reviews-text
+		// Стили для класса .contacts__reviews-text
+	&__reviews-link
+		// Стили для класса .contacts__reviews-link
+	&__other
+		// Стили для класса .contacts__other
+	&__links
+		// Стили для класса .contacts__links
+	&__list
+		// Стили для класса .contacts__list
+	&__item
+		// Стили для класса .contacts__item
+	&__form
+		// Стили для класса .contacts__form

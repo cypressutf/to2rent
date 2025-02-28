@@ -1,2 +1,29 @@
 @use 'vars' as *
 
+.apartments
+	background-image: url('../img/apartments-bg.jpg')
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	height: 100vh
+	border-bottom: 1px solid $white
+	&__inner
+		display: flex
+		align-items: flex-end
+		flex-direction: column
+		text-align: right
+	&__title
+		padding-top: 68px
+		@include ptserif-regular
+		font-size: 48px
+		line-height: 48px
+		color: $white
+		span
+			display: block
+			margin-bottom: 15px
+	&__button
+		cursor: pointer
+		background-color: $black
+		color: $white
+		max-width: 150px
+		padding: 16px 17px
