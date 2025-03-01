@@ -1,23 +1,32 @@
 @use 'vars' as *
 
 .about
-	margin-bottom: 110px
+	// margin-bottom: 110px
+	margin-bottom: clamp(3.125rem, 1.761rem + 6.82vw, 6.875rem)
 	&__title
-		font-size: 48px
-		line-height: 64px
+		// font-size: 48px
+		font-size: clamp(1.25rem, 0.614rem + 3.18vw, 3rem)
+		// line-height: 64px
+		line-height: clamp(1.5rem, 0.591rem + 4.55vw, 4rem)
 		@include ptserif-regular
 		text-align: center
 		background-color: $black
 		color: $white
 		padding: 18px 10px
-		margin-bottom: 100px
+		// margin-bottom: 100px
+		margin-bottom: clamp(0.625rem, -1.42rem + 10.23vw, 6.25rem)
 		gap: 25px
 	&__items
 		display: flex
-		justify-content: space-between
-		margin-bottom: 200px
-	&__item-img
+		flex-wrap: wrap
+		justify-content: center
+		// margin-bottom: 200px
+		margin-bottom: clamp(3.125rem, -0.284rem + 17.05vw, 12.5rem)
+		gap: 20px
+	&__item-images
 		margin-bottom: 30px
+	&__item-img
+		width: 100%
 	&__item-title
 		font-size: 24px
 		line-height: 24px
@@ -36,20 +45,26 @@
 		cursor: pointer
 	&__content
 		display: flex
+		flex-wrap: wrap
 		justify-content: space-between
-		gap: 113px
+		// gap: 113px
+		gap: clamp(3.125rem, 1.693rem + 7.16vw, 7.063rem)
 	&__time-box, &__globus-box
 		display: flex
-		gap: 33px
+		// gap: 33px
+		gap: clamp(0.625rem, 0.102rem + 2.61vw, 2.063rem)
 		align-items: center
 	&__time-title, &__globus-title
 		max-width: 335px
 		@include ptserif-regular
-		font-size: 36px
-		line-height: 36px
+		// font-size: 36px
+		font-size: clamp(1.438rem, 1.142rem + 1.48vw, 2.25rem)
+		// line-height: 36px
+		line-height: clamp(1.75rem, 1.568rem + 0.91vw, 2.25rem)
 	&__time-text, &__globus-text
 		margin-top: 20px
-		margin-bottom: 45px
+		// margin-bottom: 45px
+		margin-bottom: clamp(0.938rem, 0.256rem + 3.41vw, 2.813rem)
 		max-width: 471px
 	&__time-link, &__globus-link
 		color: $grey
@@ -65,3 +80,6 @@
 			background-repeat: no-repeat
 			width: 30px
 			height: 30px
+	&__time-img, &__globus-img
+		// width: 103px
+		width: clamp(3.125rem, 1.92rem + 6.02vw, 6.438rem)
