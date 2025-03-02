@@ -26,7 +26,10 @@
 	&__item-images
 		margin-bottom: 30px
 	&__item-img
-		width: 100%
+		width: 280px
+		height: 280px
+		border-radius: 50%
+		object-fit: cover
 	&__item-title
 		font-size: 24px
 		line-height: 24px
@@ -47,8 +50,7 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-		// gap: 113px
-		gap: clamp(3.125rem, 1.693rem + 7.16vw, 7.063rem)
+		gap: 30px
 	&__time-box, &__globus-box
 		display: flex
 		// gap: 33px
@@ -83,3 +85,13 @@
 	&__time-img, &__globus-img
 		// width: 103px
 		width: clamp(3.125rem, 1.92rem + 6.02vw, 6.438rem)
+@media ( max-width: 991px )
+	.about
+		&__content
+			gap: 50px
+		&__time-title, &__globus-title
+			max-width: 100%
+		&__time-text, &__globus-text
+			max-width: 100%
+		.about__globus-img, .about__time-img
+			display: none

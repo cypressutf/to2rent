@@ -8,7 +8,7 @@ $(function () {
 	$('.header__slider').slick({
 		prevArrow: '<button type="button" class="slick-prev"><img src="img/arrow-prev.svg"></button>',
 		nextArrow: '<button type="button" class="slick-next"><img src="img/arrow-next.svg"></button>',
-		fade: true,
+		// fade: true,
 		responsive: [
 			{
 				breakpoint: 601,

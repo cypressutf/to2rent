@@ -27,6 +27,9 @@
 	&__manager-img
 		margin-bottom: 22px
 		img
+			width: 100px
+			height: 100px
+			object-fit: cover
 			border-radius: 50%
 	&__manager-name
 		@include robotocondensed-regular
@@ -69,7 +72,9 @@
 	&__reviews
 		max-width: 300px
 	&__reviews-img
-		max-width: 300px
+		width: 300px
+		height: 127px
+		object-fit: cover
 		margin-top: 48px
 	&__reviews-text
 		margin: 16px 0
@@ -104,12 +109,13 @@
 		font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem)
 		line-height: 18px
 		color: $grey
-		max-width: 82px
+		width: 82px
 		text-align: left
 		margin-right: 10px
 	&__form-input
 		color: $grey
-		width: 430px
+		// width: 430px
+		width: clamp(13.5rem, 8.636rem + 24.32vw, 26.875rem)
 		// font-size: 18px
 		font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem)
 		line-height: 24px
@@ -139,7 +145,13 @@
 		&__other
 			justify-content: center
 			text-align: center
-@media ( max-width: 695px )
+			flex-direction: column
+@media ( max-width: 845px )
 	.contacts
-		&__form-input
-			width: 100%
+		&__form
+			flex-wrap: wrap
+	.contacts__form-title
+		width: 100%
+		margin-right: 0
+		text-align: center
+		margin-bottom: 10px

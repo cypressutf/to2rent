@@ -9,8 +9,11 @@
 		margin: clamp(0.625rem, -1.193rem + 9.09vw, 5.625rem) 10px clamp(0.625rem, -0.511rem + 5.68vw, 3.75rem)
 	&__slider
 		position: relative
-		img
+		&-img
 			width: 100%
+			// min-height: 600px
+			min-height: clamp(12.5rem, 3.409rem + 45.45vw, 37.5rem)
+			object-fit: cover
 	&__search
 		// padding: 60px 0 70px
 		padding: clamp(0.625rem, -0.511rem + 5.68vw, 3.75rem) 0 clamp(0.625rem, -0.739rem + 6.82vw, 4.375rem)
@@ -19,6 +22,7 @@
 			justify-content: center
 			align-items: center
 	&__search-title
+		width: 156px
 		// font-size: 24px
 		font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem)
 		line-height: 24px
@@ -30,7 +34,8 @@
 			display: block
 	&__search-input
 		color: $grey
-		width: 430px
+		// width: 430px
+		width: clamp(12rem, 6.591rem + 27.05vw, 26.875rem)
 		// font-size: 18px
 		font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem)
 		line-height: 24px
@@ -51,7 +56,7 @@
 		background-color: $grey
 		border: none
 		// padding: 23px 23px 23px 36px
-		padding: clamp(0.625rem, 0.33rem + 1.48vw, 1.438rem) clamp(0.625rem, 0.33rem + 1.48vw, 1.438rem) clamp(0.625rem, 0.33rem + 1.48vw, 1.438rem) 36px
+		padding: clamp(0.875rem, 0.67rem + 1.02vw, 1.438rem) clamp(0.625rem, 0.33rem + 1.48vw, 1.438rem) clamp(0.625rem, 0.33rem + 1.48vw, 1.438rem) 36px
 		cursor: pointer
 		position: relative
 		&::before
@@ -103,8 +108,24 @@
 	.header
 		padding: 0 10px
 		&__search
-			&-form
-				flex-direction: column
-				gap: 10px
-			&-input
+			&-title
 				width: 100%
+				text-align: center
+				margin-bottom: 10px
+			&-form
+				flex-wrap: wrap
+@media ( max-width: 600px )
+	.menu
+		border: none
+		&__list
+			display: block
+			border-bottom: 1px solid $grey
+		&__list-item
+			width: 100%
+			&:first-child, &:last-child
+				border-left: none
+				border-right: none
+		&__list-item
+			border-top: 1px solid $grey
+		&__list-link
+			border: none

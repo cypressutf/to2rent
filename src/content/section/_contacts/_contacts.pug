@@ -55,12 +55,17 @@ section.contacts
 			.contacts__other 
 				.contacts__links 
 					ul.contacts__list
-						li.contacts__item О нас
-						li.contacts__item Дома
-						li.contacts__item Аппартаменты
-						li.contacts__item Отзывы
-						li.contacts__item Контакты
-				.contacts__form
+						li.contacts__item 
+							a.contacts__link(href="#") О нас
+						li.contacts__item 
+							a.contacts__link(href="#") Дома
+						li.contacts__item 
+							a.contacts__link(href="#") Аппартаменты
+						li.contacts__item 
+							a.contacts__link(href="#") Отзывы
+						li.contacts__item 
+							a.contacts__link(href="#") Контакты
+				form.contacts__form
 					label.contacts__form-title Связаться с нами
 					.contacts__form-box
 					input.contacts__form-input(type="text" placeholder="Задать вопрос")

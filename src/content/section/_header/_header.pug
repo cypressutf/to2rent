@@ -14,12 +14,11 @@ header.header
 				li.menu__list-item
 					a.menu__list-link(href="#") Контакты
 		.header__slider 
-			img(src="img/header-slider-1.jpg", alt="")
-			img(src="img/header-slider-2.jpg", alt="")
-			img(src="img/header-slider-3.jpg", alt="")
+			img.header__slider-img(src="img/header-slider-1.jpg", alt="")
+			img.header__slider-img(src="img/header-slider-2.jpg", alt="")
+			img.header__slider-img(src="img/header-slider-3.jpg", alt="")
 		.header__search 
-			.header__search-form
-				label.header__search-title Поиск 
-					span Аппартаментов
+			form.header__search-form
+				label.header__search-title Поиск Аппартаментов
 				input.header__search-input(type="text" placeholder="Введите город")
 				button.header__search-btn(type="submit") Найти
